@@ -1,7 +1,31 @@
 aid: slik
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/slik.png
 name: Slik
-description: Slik is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Slik is a Latin American employee experience (PX) platform that helps
+  organizations measure, analyze, and activate employee engagement in real
+  time. Its Engagement module runs collaborator-journey surveys with real-time
+  reporting, AI-prioritized improvement opportunities, people analytics and
+  prediction, and leader action plans across the selection, onboarding, climate,
+  and wellbeing touchpoints; its Performance module tracks cascading OKRs and
+  continuous feedback outside annual review cycles. Slik distributes surveys and
+  reaches employees through messaging channels including Slack, Google, Microsoft
+  Teams, Workplace, and WhatsApp. Founded in Buenos Aires, Argentina and backed by
+  500 Global/500 Latam, AVP Ventures, and Vulcano Fund, the platform serves large
+  enterprises such as Burger King, AXA, DHL, Starbucks, and Dole. Slik does not
+  publish a public developer API, developer portal, or API documentation; this
+  profile captures the company identity and probed domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/slik/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +33,22 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-no-api-surface: true
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Employee Experience
+- Employee Engagement
+- Human Resources
+- People Analytics
+- Surveys
+- Performance Management
+- OKRs
+- Employee Wellbeing
+- SaaS
+- Latin America
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +56,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/slik-domain-security.yml
 - type: Website
-  url: https://slikpro.com
+  url: https://www.slikpro.com/en/home-en
+- type: Blog
+  url: https://blog.slikpro.com
+- type: Support
+  url: mailto:sales@slikpro.com
+- type: TermsOfService
+  url: https://www.slikpro.com/en/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.slikpro.com/en/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
